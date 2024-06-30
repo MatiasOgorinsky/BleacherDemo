@@ -19,7 +19,7 @@ const imageUrls = [
     id: 3,
     name: "Wordfinder",
     link: "/nba_demo/lettershot",
-    gameImage: "https://cdn.openart.ai/published/380jg84uL7CASrB8GJ63/fndWKLWP_mSjT_1024.webp",
+    gameImage: "https://cdn.openart.ai/published/380jg84uL7CASrB8GJ63/CCPjGFE-_vTjc_1024.webp",
     iconImage: "https://playgen-assets.s3.amazonaws.com/icons/wordfinder.png",
     description: "Find hidden words in a grid testing vocabulary and attention.",
   },
