@@ -2,7 +2,7 @@ const imageUrls = [
   {
     id: 1,
     name: "Crossword",
-    link: "/cr",
+    link: "bleacher_demo/crossword",
     gameImage: "https://playgen-assets.s3.amazonaws.com/assets/temp/nba/1.webp",
     iconImage: "https://playgen-assets.s3.amazonaws.com/icons/crossword_1.png",
     description: "Solve clues to fill squares with words in crossword puzzles",
