@@ -4,11 +4,13 @@ const Header = () => {
   return (
     <header>
       <div className="bg-black text-white flex items-center p-2">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzoBABBloG39tuVccX87NmnD81Ui-z_1tS7A&s"
-          alt="Brand Logo"
-          className="h-9 w-9 ml-20" // Ajuste de márgenes
-        />
+        <a href="/">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzoBABBloG39tuVccX87NmnD81Ui-z_1tS7A&s"
+            alt="Brand Logo"
+            className="h-9 w-9 ml-20" // Ajuste de márgenes
+          />
+        </a>
       </div>
       <nav className="bg-white border-b shadow-lg">
         <div className="flex items-center justify-start px-2 h-16 ml-20">
