@@ -2,7 +2,7 @@ const imageUrls = [
   {
     id: 1,
     name: "Crossword",
-    link: "/nba_demo/wordmaze",
+    link: "/cr",
     gameImage: "https://playgen-assets.s3.amazonaws.com/assets/temp/nba/1.webp",
     iconImage: "https://playgen-assets.s3.amazonaws.com/icons/crossword_1.png",
     description: "Solve clues to fill squares with words in crossword puzzles",
@@ -10,7 +10,7 @@ const imageUrls = [
   {
     id: 2,
     name: "Trivia",
-    link: "/nba_demo/trivia",
+    link: "bleacher_demo/trivia",
     gameImage: "https://cdn.openart.ai/published/380jg84uL7CASrB8GJ63/u23xzYbp_6Gib_1024.webp",
     iconImage: "https://playgen-assets.s3.amazonaws.com/icons/trivia.png",
     description: "Answer diverse topic questions correctly in a quick-thinking quiz game.",
