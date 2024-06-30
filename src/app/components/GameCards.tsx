@@ -10,8 +10,8 @@ const GameCards = () => {
             {imageUrls.map((game) => (
               <div key={game.id} className="bg-card text-card-foreground relative w-full cursor-pointer rounded-sm shadow-none border-0">
                 <a href={game.link}>
-                  <div className="h-56 w-full relative flex items-center rounded-sm justify-center bg-background">
-                    <img src={game.gameImage} className="h-full w-full object-cover rounded-sm object-top" alt={`Game Image ${game.id}`} />
+                  <div className="h-64 w-full relative flex items-center rounded-sm justify-center bg-background">
+                    <img src={game.gameImage} className="h-full w-11/12 object-cover rounded-sm object-top" alt={`Game Image ${game.id}`} />
                     <div className="absolute -bottom-6 right-2 p-2 rounded-sm flex items-center justify-center" style={{ backgroundColor: "#5dadec" }}>
                       <img src={game.iconImage} className="h-16 w-16 object-contain" alt={`${game.name} Icon`} />
                     </div>
