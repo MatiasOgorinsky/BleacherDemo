@@ -6,7 +6,7 @@ const Header = () => {
       <div className="flex items-center bg-black text-gray-300 p-2 h-50">
         <div className="ml-8">
           <h1 style={{ margin: 0, marginRight: "4.5rem" }}>
-            <a title="BR Logo" aria-label="Bleacher Report Home" href="/">
+            <a title="BR Logo" aria-label="Bleacher Report Home" href="https://bleacherreport.com" target="_blank">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzoBABBloG39tuVccX87NmnD81Ui-z_1tS7A&s" alt="Brand Logo" className="h-9 w-10" />
             </a>
           </h1>
