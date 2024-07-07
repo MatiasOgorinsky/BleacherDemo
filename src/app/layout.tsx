@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Lato, Roboto } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({
@@ -25,8 +27,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${roboto.className} ${inter.className}`}>{children}</body>
+    <html>
+      <body>
+        <div className={`flex h-screen flex-col ${roboto.variable} ${inter.className}`}>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }
