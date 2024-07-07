@@ -21,8 +21,8 @@ const GameCards = () => {
                     </div>
                   </div>
                   <div className="p-0">
-                    <h2 className="relative uppercase mt-2 text-3xl z-2 text-gray-300">{game.name}</h2>
-                    <p className="leading-5 mt-1 text-sm text-gray-300">{game.description}</p>
+                    <h2 className="relative uppercase mt-2 text-4xl z-2 text-gray-300">{game.name}</h2>
+                    <p className="leading-5  mt-1 text-lg text-gray-300">{game.description}</p>
                   </div>
                 </Link>
               </div>
