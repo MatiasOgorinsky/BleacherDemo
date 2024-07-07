@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "./components/Header";
 import GameCards from "./components/GameCards";
 import FooterSection from "./components/Footer";
