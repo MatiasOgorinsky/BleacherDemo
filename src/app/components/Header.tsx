@@ -1,11 +1,14 @@
 import React from "react";
+import Image from "next/image";
+import BrImage from "../assets/BR-image.png";
+import Link from "next/link";
 
 const Header = () => {
   const navItems = [
     { label: "NBA", href: "/" },
     { label: "NEWS", href: "/" },
     { label: "SCORES", href: "/" },
-    { label: "TEAMS", href: "/", disabled: true },
+    { label: "TEAMS", href: "/" },
     { label: "RUMORS", href: "/" },
     { label: "HIGHLIGHTS", href: "/" },
     { label: "FANTASY", href: "/" },
@@ -29,9 +32,9 @@ const Header = () => {
       <div className="flex items-center bg-black text-gray-300 p-2 h-50">
         <div className="ml-8">
           <h1 style={{ margin: 0, marginRight: "4.5rem" }}>
-            <a title="BR Logo" aria-label="Bleacher Report Home" href="https://bleacherreport.com" target="_blank">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzoBABBloG39tuVccX87NmnD81Ui-z_1tS7A&s" alt="Brand Logo" className="h-9 w-10" />
-            </a>
+            <Link href="https://bleacherreport.com" target="_blank">
+              <Image src={BrImage} alt="Brand Logo" width={45} height={40} />
+            </Link>
           </h1>
         </div>
         <div className="hidden md:flex items-center space-x-6">
@@ -47,7 +50,7 @@ const Header = () => {
           <span className="font-bold border-r border-primary pr-4 text-sm md:text-base">Puzzles</span>
           <div className="flex flex-wrap gap-6 ml-2 md:ml-4 flex-1">
             {navItems.map((item, index) => (
-              <a key={index} href={item.href} className={`typography -heading-4 -text--tertiary navLink text-sm md:text-base font-bold ${item.disabled ? "-disabled" : ""}`}>
+              <a key={index} href={item.href} className={`typography -heading-4 -text--tertiary navLink text-sm md:text-base font-bold`}>
                 {item.label}
               </a>
             ))}
