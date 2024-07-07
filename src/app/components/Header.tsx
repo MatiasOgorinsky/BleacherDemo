@@ -31,28 +31,28 @@ const Header = () => {
     <header>
       <div className="flex items-center bg-black text-gray-300 p-2 h-50">
         <div className="ml-8">
-          <h1 style={{ margin: 0, marginRight: "4.5rem" }}>
+          <h1 className="mr-12">
             <Link href="https://bleacherreport.com" target="_blank">
-              <Image src={BrImage} alt="Brand Logo" width={45} height={40} />
+              <Image src={BrImage} alt="Brand Logo" width={45} height={40} className="ml-4" />
             </Link>
           </h1>
         </div>
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden md:flex items-center space-x-4">
           {headerItems.map((item, index) => (
-            <a key={index} className="text-sm font-bold" href={item.href}>
-              {item.label}
-            </a>
+            <Link key={index} href={item.href}>
+              <span className="font-bold pr-4 text-sm md:text-base">{item.label}</span>
+            </Link>
           ))}
         </div>
       </div>
       <nav className="bg-black border-b shadow-lg">
-        <div className="flex items-center justify-start px-2 h-16 ml-4  md:ml-10 text-gray-300">
+        <div className="flex items-center justify-start px-2 h-16 ml-4 md:ml-10 text-gray-300">
           <span className="font-bold border-r border-primary pr-4 text-sm md:text-base">Puzzles</span>
           <div className="flex flex-wrap gap-6 ml-2 md:ml-4 flex-1">
             {navItems.map((item, index) => (
-              <a key={index} href={item.href} className={`typography -heading-4 -text--tertiary navLink text-sm md:text-base font-bold`}>
-                {item.label}
-              </a>
+              <Link key={index} href={item.href}>
+                <span className="text-sm md:text-base font-bold">{item.label}</span>
+              </Link>
             ))}
           </div>
         </div>
