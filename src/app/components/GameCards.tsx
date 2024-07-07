@@ -1,5 +1,5 @@
 import React from "react";
-import imageUrls from "../constants/constants";
+import gamesUrls from "../constants/index";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,7 +9,7 @@ const GameCards = () => {
       <div className="bg-gray-700 w-full mx-auto rounded-sm p-5">
         <section className="p-4">
           <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 z-100">
-            {imageUrls.map((game) => (
+            {gamesUrls.map((game) => (
               <div key={game.id} className="bg-card text-white relative w-full cursor-pointer rounded-sm shadow-none border-0">
                 <Link href={game.link}>
                   <div className="h-64 w-full relative flex items-center rounded-sm justify-center bg-background">
